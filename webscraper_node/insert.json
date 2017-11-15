@@ -1,0 +1,290 @@
+[
+    {
+        "title": "Green Business Place",
+        "address": "Avenida Rondon Pacheco, 635",
+        "bairro_estado": "Jardim Atlântico, Belo Horizonte - MG",
+        "area": "105m²",
+        "price": "Contate para saber o preço",
+        "status": "Pronto para morar"
+    },
+    {
+        "title": "Pallazzo Bellavista",
+        "address": "Rua Cristiano Buys",
+        "bairro_estado": "Horto Bela Vista, Salvador - BA",
+        "area": "64m² até 86m²",
+        "room": "2 até 3",
+        "price": "R$ 335.000",
+        "status": "Pronto para morar"
+    },
+    {
+        "title": "Montserrat Residence",
+        "address": "Rua Leda Porto Freire, 455",
+        "bairro_estado": "Parque Iracema, Fortaleza - CE",
+        "area": "140m²",
+        "room": "3",
+        "bathroom": "4",
+        "price": "R$ 750.000",
+        "status": "Pronto para morar"
+    },
+    {
+        "title": "Think Business Center",
+        "address": "Av. Marquês de São Vicente, 230",
+        "bairro_estado": "Barra Funda, São Paulo - SP",
+        "area": "33m² até 762m²",
+        "bathroom": "2 até 15",
+        "price": "R$ 409.900",
+        "status": "Em Construção"
+    },
+    {
+        "title": "Ville Vancouver",
+        "address": "Rua Três",
+        "bairro_estado": "Nova Pampulha, Vespasiano - MG",
+        "area": "47m²",
+        "room": "2",
+        "bathroom": "1",
+        "price": "R$ 148.900",
+        "status": "Na Planta"
+    },
+    {
+        "title": "San Vicente",
+        "address": "Rua Doutor Barbosa Gonçalves, 777",
+        "bairro_estado": "Chácara das Pedras, Porto Alegre - RS",
+        "area": "108m²",
+        "room": "3",
+        "bathroom": "3",
+        "price": "R$ 790.000",
+        "status": "Pronto para morar"
+    },
+    {
+        "title": "Manses do Lago",
+        "address": "Av. Rio Bonito, 1440",
+        "bairro_estado": "Jardim Marabá, São Paulo - SP",
+        "area": "119m² até 122m²",
+        "room": "4",
+        "bathroom": "4",
+        "price": "R$ 741.098",
+        "status": "Na Planta"
+    },
+    {
+        "title": "Fortaleza de Sangres Residencial",
+        "address": "Francisco Vahldieck, 2627",
+        "bairro_estado": "Fortaleza, Blumenau - SC",
+        "area": "51m² até 70m²",
+        "room": "2 até 3",
+        "bathroom": "1 até 2",
+        "price": "R$ 239.000",
+        "status": "Pronto para morar"
+    },
+    {
+        "title": "West Vintage",
+        "address": "Rivadavia Campos",
+        "bairro_estado": "Recreio Dos Bandeirantes, Rio de Janeiro - RJ",
+        "area": "53m² até 177m²",
+        "room": "1 até 3",
+        "bathroom": "1 até 4",
+        "price": "R$ 594.000",
+        "status": "Em Construção"
+    },
+    {
+        "title": "You,Barra SP",
+        "address": "Anhangüera, 725",
+        "bairro_estado": "Barra Funda, São Paulo - SP",
+        "area": "48m² até 62m²",
+        "room": "2 até 3",
+        "bathroom": "1 até 2",
+        "price": "Contate para saber o preço",
+        "status": "Em Construção"
+    },
+    {
+        "title": "Unique Pinheiros",
+        "address": "Eugênio de Medeiros, 292",
+        "bairro_estado": "Pinheiros, São Paulo - SP",
+        "area": "59m² até 119m²",
+        "room": "2",
+        "bathroom": "2",
+        "price": "R$ 719.000",
+        "status": "Na Planta"
+    },
+    {
+        "title": "Patio Campo Grande",
+        "address": "Rua Augusto de Vasconcelos, 544",
+        "bairro_estado": "Campo Grande, Rio de Janeiro - RJ",
+        "area": "18m² até 56m²",
+        "price": "R$ 162.000",
+        "status": "Pronto para morar"
+    },
+    {
+        "title": "You,Now Chácara Santo Antônio",
+        "address": "Rua da Paz",
+        "bairro_estado": "Chácara Santo Antônio, São Paulo - SP",
+        "area": "35m² até 60m²",
+        "room": "1 até 2",
+        "bathroom": "1 até 2",
+        "price": "Contate para saber o preço",
+        "status": "Em Construção"
+    },
+    {
+        "title": "Parque Atlântico",
+        "address": "Boa Viagem, 2272",
+        "bairro_estado": "Boa Viagem, Recife - PE",
+        "area": "43m² até 57m²",
+        "price": "R$ 673.459",
+        "status": "Pronto para morar"
+    },
+    {
+        "title": "BeLive Tatuapé",
+        "address": "Cândido Vale, 272",
+        "bairro_estado": "Tatuapé, São Paulo - SP",
+        "area": "26m² até 40m²",
+        "room": "1",
+        "bathroom": "1",
+        "price": "R$ 237.000",
+        "status": "Em Construção"
+    },
+    {
+        "title": "Edíficio Mallorca",
+        "address": "Tenente Garro, 68",
+        "bairro_estado": "Santa Efigênia, Belo Horizonte - MG",
+        "area": "65m²",
+        "room": "2",
+        "bathroom": "2",
+        "price": "R$ 516.256",
+        "status": "Em Construção"
+    },
+    {
+        "title": "Mar de Portugual",
+        "address": "Avenida Antônio Lisboa de Amorim, 96",
+        "bairro_estado": "Cidade Universitária, Maceió - AL",
+        "area": "40m²",
+        "room": "1 até 2",
+        "bathroom": "1",
+        "price": "R$ 132.700",
+        "status": "Na Planta"
+    },
+    {
+        "title": "Essence Residencial",
+        "address": "Rua Monsenhor Agnaldo José Gonçalves, 730",
+        "bairro_estado": "Jardim Aurélia, Campinas - SP",
+        "area": "64m² até 78m²",
+        "room": "2 até 3",
+        "bathroom": "2",
+        "price": "R$ 369.600",
+        "status": "Pronto para morar"
+    },
+    {
+        "title": "Ville Costa Rica",
+        "address": "Rua Albert Schwaitzer",
+        "bairro_estado": "Olinda, Contagem - MG",
+        "area": "47m²",
+        "room": "2",
+        "bathroom": "1",
+        "price": "R$ 164.900",
+        "status": "Na Planta"
+    },
+    {
+        "title": "Barão 177",
+        "address": "Rua Barão de Camargos, 177",
+        "bairro_estado": "Centro, Uberlândia - MG",
+        "area": "69m² até 145m²",
+        "room": "3",
+        "bathroom": "4",
+        "price": "Contate para saber o preço",
+        "status": "Pronto para morar"
+    },
+    {
+        "title": "PW 56",
+        "address": "Rua Pedro Weingartner, 56",
+        "bairro_estado": "Moinhos de Vento, Porto Alegre - RS",
+        "area": "152m²",
+        "room": "3",
+        "bathroom": "3",
+        "price": "R$ 1.796.000",
+        "status": "Em Construção"
+    },
+    {
+        "title": "Parque Porto Farroupilha",
+        "address": "Avenida João Ferreira Jardim, 128",
+        "bairro_estado": "Rubem Berta, Porto Alegre - RS",
+        "area": "44m²",
+        "room": "2",
+        "bathroom": "1",
+        "price": "R$ 174.332",
+        "status": "Em Construção"
+    },
+    {
+        "title": "Parque Iguatemi",
+        "address": "R. Prof. Ildefonso de Mesquita, 458",
+        "bairro_estado": "Parque Bela Vista, Salvador - BA",
+        "area": "51m²",
+        "room": "2",
+        "bathroom": "2",
+        "price": "R$ 267.026",
+        "status": "Pronto para morar"
+    },
+    {
+        "title": "Up Home Vila Mascote",
+        "address": "Santa Catarina, 1555",
+        "bairro_estado": "Vila Mascote, São Paulo - SP",
+        "area": "67m²",
+        "room": "2",
+        "bathroom": "2",
+        "price": "R$ 482.177",
+        "status": "Na Planta"
+    },
+    {
+        "title": "Union Square - Work",
+        "address": "avenida abelardo bueno, 600",
+        "bairro_estado": "Barra da Tijuca, Rio de Janeiro - RJ",
+        "area": "21m² até 128m²",
+        "price": "Contate para saber o preço",
+        "status": "Em Construção"
+    },
+    {
+        "title": "Alamedas dos Cristais - Porto Ametista",
+        "address": "Guarujá, 400",
+        "bairro_estado": "São José, Canoas - RS",
+        "area": "41m²",
+        "room": "2",
+        "bathroom": "1",
+        "price": "R$ 150.800",
+        "status": "Na Planta"
+    },
+    {
+        "title": "Evolution Sea Park",
+        "address": "Av. General Luiz de França Albuquerque, 2650",
+        "bairro_estado": "Cruz das Almas, Maceió - AL",
+        "area": "86m² até 141m²",
+        "room": "2 até 3",
+        "bathroom": "3 até 4",
+        "price": "R$ 565.000",
+        "status": "Em Construção"
+    },
+    {
+        "title": "Ez Mark",
+        "address": "Domingos de Morais, 2187",
+        "bairro_estado": "Vila Mariana, São Paulo - SP",
+        "area": "52m² até 121m²",
+        "price": "R$ 705.900",
+        "status": "Em Construção"
+    },
+    {
+        "title": "You,Alto Da Boa Vista",
+        "address": "Rua João Pimenta",
+        "bairro_estado": "Santo Amaro, São Paulo - SP",
+        "area": "51m² até 54m²",
+        "room": "2",
+        "bathroom": "1 até 2",
+        "price": "Contate para saber o preço",
+        "status": "Na Planta"
+    },
+    {
+        "title": "Vita Residencial Clube Recife",
+        "address": "R. Jorge de Lima, 245",
+        "bairro_estado": "Imbiribeira, Recife - PE",
+        "area": "63m² até 72m²",
+        "room": "3",
+        "bathroom": "2 até 3",
+        "price": "R$ 380.564",
+        "status": "Pronto para morar"
+    }
+]

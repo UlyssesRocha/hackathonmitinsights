@@ -1,0 +1,522 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Lar Perfeito </title>
+    <!-- Favicon-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Core Css -->
+    <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="plugins/node-waves/waves.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Morris Chart Css-->
+    <link href="plugins/morrisjs/morris.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="css/themes/all-themes.css" rel="stylesheet" />
+    <style>
+    .slider{
+        margin: 100px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+        width: 500px;
+        height: 40px;
+    }
+
+    .container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 12.5px;
+        margin-left: 10px;
+        width: 480px;
+        height: 10px;
+        background-color: #ffffff;
+        box-shadow: inset 0px 0px 2px #000000;
+        border-radius: 3px;
+    }
+
+    .marker{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: #FF5722;
+        box-shadow: inset 0px 0px 3px #000000;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 5px;
+    }
+
+    .start{
+        position: absolute;
+        width: 80px;
+        height: 40px;
+        top: 0;
+        left: -80px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 25px;
+        background-color: #ffffff;
+        box-shadow: inset 0px 0px 2px #000000;
+        border-radius: 3px;
+    }
+
+    .end{
+        position: absolute;
+        width: 80px;
+        height: 40px;
+        top: 0;
+        right: -80px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 25px;
+        background-color: #ffffff;
+        box-shadow: inset 0px 0px 2px #000000;
+        border-radius: 3px;
+    }
+
+    .title{
+        position: absolute;
+        width: 500px;
+        height: 40px;
+        top: -40px;
+        left: 0px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 25px;
+        border-radius: 3px;
+    }
+</style>
+</head>
+
+<body class="theme-indigo" ng-app="larperfeito" data-framework="firebase">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <div class="search-icon">
+            <i class="material-icons">search</i>
+        </div>
+        <input type="text" placeholder="START TYPING...">
+        <div class="close-search">
+            <i class="material-icons">close</i>
+        </div>
+    </div>
+    <!-- #END# Search Bar -->
+    <!-- Top Bar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="javascript:void(0);" class="bars"></a>
+                <a class="navbar-brand" href="index2.html">
+
+                    <img src="images/logo.png" width="135" alt="logo" style="margin-top: -7px;width: 30px;float: left;" />  Lar Perfeito
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Call Search -->
+                    <li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li>
+                    <!-- #END# Call Search -->
+                    
+         
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- #Top Bar -->
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- User Info -->
+
+            <!-- #User Info -->
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+                   
+                    <li class="active">
+                        <a href="index2.html">
+                            <i class="material-icons">location_on</i>
+                            <span>Imoveis</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="material-icons">receipt</i>
+                            <span>Leads</span>
+                        </a>
+                    </li>
+
+
+                   
+                </ul>
+            </div>
+
+
+      
+
+
+            <!-- #Menu -->
+            <!-- Footer -->
+            <div class="legal">
+                <div class="copyright">
+                    &copy; 2017 <a href="javascript:void(0);">Lar perfeito</a>.
+                </div>
+
+            </div>
+            <!-- #Footer -->
+        </aside>
+        <!-- #END# Left Sidebar -->
+        <!-- Right Sidebar -->
+  
+    </section>
+
+    <section class="content" ng-controller="SpotCtrl">
+        <div class="container-fluid">
+            <div class="block-header">
+                <h2>Visão Geral</h2>
+            </div>
+
+
+
+
+            <!-- Widgets -->
+            <div class="row clearfix">
+
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs tab-nav-right" role="tablist">
+                                <li role="presentation" class="active"><a href="#home" data-toggle="tab">Mais Vistos</a></li>
+                                <li role="presentation"><a href="#profile" data-toggle="tab">Mais Rejeitados</a></li>
+                                <li role="presentation"><a href="#messages" data-toggle="tab">Perfil do usuário</a></li>
+
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade in active" id="home">
+                                    
+                                    <p>
+ <!-- Custom Content -->
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+
+                            <ul class="header-dropdown m-r--5">
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li><a href="javascript:void(0);">Action</a></li>
+                                        <li><a href="javascript:void(0);">Another action</a></li>
+                                        <li><a href="javascript:void(0);">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-3" ng-repeat="imovel in imoveis | orderBy : 'rating'">
+                                    <div class="thumbnail">
+                                        <img ng-src="{{ imovel.photos[0] }}">
+                                        <div class="caption">
+                                            <h3>{{ imovel.details }}</h3>
+                                            <p>
+                                                {{imovel.address.neighborhood}}<br>
+                                                {{imovel.address.city}} - {{imovel.address.state}} <br><br>
+
+                                                 {{ imovel.area}}m2 -  {{ imovel.rooms }} quartos -  {{ imovel.bathrooms }} banheiros <br>
+                                               
+                                            </p>
+                                            <p>
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+ 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #END# Custom Content -->
+                                    </p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="profile">
+                                    
+
+
+                           <p>
+ <!-- Custom Content -->
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                 
+                            <ul class="header-dropdown m-r--5">
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li><a href="javascript:void(0);">Action</a></li>
+                                        <li><a href="javascript:void(0);">Another action</a></li>
+                                        <li><a href="javascript:void(0);">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-3" ng-repeat="imovel in imoveis | orderBy : '-rating'">
+                                    <div class="thumbnail">
+                                        <img ng-src="{{ imovel.photos[0] }}">
+                                        <div class="caption">
+                                            <h3>{{ imovel.details }}</h3>
+                                            <p>
+                                                {{imovel.address.neighborhood}}<br>
+                                                {{imovel.address.city}} - {{imovel.address.state}} <br><br>
+
+                                                 {{ imovel.area}}m2 -  {{ imovel.rooms }} quartos -  {{ imovel.bathrooms }} banheiros <br>
+                                               
+                                            </p>
+                                            <p>
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+ 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #END# Custom Content -->
+                                    </p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="messages">
+                                   
+                                    <p>
+     
+
+
+
+<div class="slider">
+    <div class="title">Quartos</div>
+    <div class="start">1</div>
+    <div class="container"></div>
+    <div class="marker" style="margin-left: {{500/5 * interest.rooms}}px;"></div>
+    <div class="end">5</div>
+</div>
+
+
+<div class="slider">
+    <div class="title">Banheiros</div>
+    <div class="start">1</div>
+    <div class="container"></div>
+    <div class="marker" style="margin-left: {{500/5 * interest.bathrooms}}px;"></div>
+    <div class="end">5</div>
+</div>
+
+
+<div class="slider">
+    <div class="title">Area</div>
+    <div class="start">30</div>
+    <div class="container"></div>
+    <div class="marker" style="margin-left: {{500/1000.0 * interest.area}}px;"></div>
+    <div class="end">1000</div>
+</div>
+
+
+<div class="slider">
+    <div class="title">Suites</div>
+    <div class="start">1</div>
+    <div class="container"></div>
+    <div class="marker" style="margin-left: {{500/5 * interest.suites}}px;"></div>
+    <div class="end">5</div>
+</div>
+
+
+
+                                    </p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="settings">
+                                    <b>Settings Content</b>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                        Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent aliquid
+                                        pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere gubergren
+                                        sadipscing mel.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #END# Example Tab -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="card">
+  
+                        <div class="body" style="padding:0">
+                            <div id="real_time_chart" class="dashboard-flot-chart"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <!-- #END# Widgets -->
+
+    
+
+            <!-- Markers -->
+            <div class="row clearfix" ng-show="false">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+
+                        <div class="body">
+                            <div id="gmap_markers" class="gmap"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #END# Markers -->            
+        
+
+            
+        </div>
+    </section>
+
+    <!-- Jquery Core Js -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core Js -->
+    <script src="plugins/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Select Plugin Js -->
+    <script src="plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+
+    <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+
+    <script src="bower_components/angular/angular.js"></script>
+
+    <script src="bower_components/angularfire/angularfire.js"></script>    
+
+    <!-- Google Maps API Js -->
+    <script src="https://maps.google.com/maps/api/js?v=3&key=AIzaSyCe8k3R0Ovq4wJAGEg6VbFqOecRWMCLROs&zoom=19"></script>
+
+    <!-- GMaps PLugin Js -->
+    <script src="plugins/gmaps/gmaps.js"></script>
+
+    <!-- Slimscroll Plugin Js -->
+    <script src="plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="plugins/node-waves/waves.js"></script>
+
+    <!-- Jquery CountTo Plugin Js -->
+    <script src="plugins/jquery-countto/jquery.countTo.js"></script>
+
+    <!-- Morris Plugin Js -->
+    <script src="plugins/raphael/raphael.min.js"></script>
+    <script src="plugins/morrisjs/morris.js"></script>
+
+    <!-- ChartJs -->
+    <script src="plugins/chartjs/Chart.bundle.js"></script>
+
+    <!-- Flot Charts Plugin Js -->
+    <script src="plugins/flot-charts/jquery.flot.js"></script>
+    <script src="plugins/flot-charts/jquery.flot.resize.js"></script>
+    <script src="plugins/flot-charts/jquery.flot.pie.js"></script>
+    <script src="plugins/flot-charts/jquery.flot.categories.js"></script>
+    <script src="plugins/flot-charts/jquery.flot.time.js"></script>
+
+    <!-- Sparkline Chart Plugin Js -->
+    <script src="plugins/jquery-sparkline/jquery.sparkline.js"></script>
+
+
+  <script src="js/app.js"></script>
+  <script src="js/controllers/spotCtrl.js"></script>
+
+    <!-- Custom Js -->
+    <script src="js/admin.js"></script>
+    <script src="js/pages/index.js"></script>
+        <!-- Custom Js -->
+    <script src="js/pages/maps/google.js"></script>
+
+
+
+    <!-- Demo Js -->
+    <script src="js/demo.js"></script>
+</body>
+
+</html>
